@@ -10,6 +10,8 @@ class MyNameId extends React.Component{
          
          <div className="my-pic-name-desig">
           <div ><img src={profilepic} className="my-pic"/></div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <div className="my-name-desig">
           <h1>Priyanka Rani</h1> 
           <h2>Software Engineer</h2>
