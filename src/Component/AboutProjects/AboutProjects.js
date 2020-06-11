@@ -1,36 +1,21 @@
 import React from 'react'
 import "./aboutproject.css"
 
-class AboutProjects  extends React.Component{
-    render(){
-      return(
-      <div className="my-project-details">
-          <div className="my-projects">
-            <ul className="ul-list-type">
-               <li><h2>6+</h2></li>
-               <li>Projects</li>
-            </ul>
-         </div>
-         <div className="my-projects">
-            <ul className="ul-list-type">
-               <li><h2>1+</h2></li>
-               <li>Mentees</li>
-            </ul>
-         </div>
-         <div className="my-projects">
-            <ul className="ul-list-type">
-               <li><h2>0</h2></li>
-               <li>Publications</li>
-            </ul>
-         </div>
-         <div className="my-projects">
-            <ul className="ul-list-type">
-               <li><h2>1</h2></li>
-               <li>Certificate</li>
-            </ul>
-         </div>
-      </div>)
-    }
-}
+class AboutProjects extends React.Component {
+   render() {
+      const { projectInfo } = this.props;
+      return <div className="my-project-details">{
+         projectInfo.map((key, index) => {
+            return (
+               <div className="my-projects" key={index}>
+                  <ul className="ul-list-type">
+                     <li><h2>{key.description} </h2></li>
+                     <li> {key.name} </li>
+                  </ul>
+               </ div>)
+         })
 
+      }</div>
+   }
+}
 export default AboutProjects;

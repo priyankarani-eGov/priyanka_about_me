@@ -1,17 +1,20 @@
 .my-project-details{
-    display: flex;
-    flex-direction: row;
-    width: 96%;
-    height: 150px;
-    padding: 16px;
-    margin: 16px;
-    border: 4px solid lightgray;
-    }
+  display: flex;
+  flex-direction: row;
+  width: 96%;
+  height: 150px;
+  padding: 16px;
+  margin: 16px;
+  border: 4px solid lightgray;
+  }
 
 .ul-list-type{
-    list-style-type: none;
+   list-style-type: none;
 }
 
 .my-projects{
-width: 25%;
+  width: 100%;
+height: 100px;
+padding: 5px;
+text-align: center;
 }   
