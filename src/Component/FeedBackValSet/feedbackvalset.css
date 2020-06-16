@@ -1,0 +1,9 @@
+feed-back_res
+{display: flex;
+flex-direction: row;
+width: 96%;
+height: 290px;
+padding: 16px;
+margin: 16px;
+border: 4px solid lightgray;
+}
