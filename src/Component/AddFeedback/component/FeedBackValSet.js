@@ -7,6 +7,7 @@ const styles = theme => ({
         padding: theme.spacing(2),
         textAlign: 'left',
         direction: 'column',
+        boxShadow:3,
 
     },
     box: {
@@ -20,7 +21,7 @@ const styles = theme => ({
 class FeedBackValSet extends React.Component {
 
     render() {
-        const { feedbackvalues = [], classes } = this.props;
+        const { feedbackvalues = [], classes } = this.props;if (feedbackvalues.length > 0) {
         return <div>
             <Paper className={classes.root} elevation={3} >
 
@@ -37,7 +38,7 @@ class FeedBackValSet extends React.Component {
              )     
             })
             }</Paper>
-        </div>
+        </div>}return <div></div>
      }
 }
 

@@ -13,7 +13,7 @@ class MyIntro extends React.Component {
      )
   }
 
-      )}
+      
 }
 
 export default MyIntro;

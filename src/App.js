@@ -6,7 +6,7 @@ import MyIntro from './Component/MyIntro/MyIntro';
 import ExperienceEducation from './Component/ExperienceEducation/ExperienceEducation';
 import SkillToolsHobbies from './Component/SkillToolsHobbies/SkillToolsHobbies';
 import AddFeedback from './Component/AddFeedback/AddFeedback';
-import FeedBackValSet from './Component/FeedBackValSet/FeedBackValSet';
+import FeedBackValSet from './Component/AddFeedback/component/FeedBackValSet';
 import { render } from '@testing-library/react';
 
 class App extends React.Component {
@@ -86,9 +86,9 @@ class App extends React.Component {
     ],
 
     feedbackvalues: [{
-      name: "",
-      rating: "",
-      description: ""
+      name: "priyanka",
+      rating: "1",
+      description: "good"
     }],
 
     feedbackval: {
@@ -155,7 +155,7 @@ class App extends React.Component {
         <SkillToolsHobbies skilltools={skilltools} />
         <FeedBackValSet feedbackvalues={feedbackvalues} />
         <AddFeedback feedbackval={feedbackval} ratings={ratings} handleChangeName={handleChangeName} handleChangeDesc={handleChangeDesc} handleChangeRate={handleChangeRate} addfeedback={addfeedback} />
-
+        
       </div>
     );
   }
