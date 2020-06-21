@@ -100,17 +100,17 @@ class App extends React.Component {
   }
 
   addfeedback = (feedbackval = {}) => {
-    if(feedbackval.name && feedbackval.description && feedbackval.rating)
-    {let { feedbackvalues = {} } = this.state;
-    feedbackvalues.push(feedbackval);
-    this.setState({
-      feedbackvalues
-    })
-  }else{
-    alert("Please enter values")
+    if (feedbackval.name && feedbackval.description && feedbackval.rating) {
+      let { feedbackvalues = {} } = this.state;
+      feedbackvalues.push(feedbackval);
+      this.setState({
+        feedbackvalues
+      })
+    } else {
+      alert("Please enter values")
+    }
   }
-  }
-  handleChangeName = (value ) => {
+  handleChangeName = (value) => {
     const { feedbackval } = this.state;
     this.setState({
       feedbackval: {
@@ -155,7 +155,8 @@ class App extends React.Component {
         <SkillToolsHobbies skilltools={skilltools} />
         <FeedBackValSet feedbackvalues={feedbackvalues} />
         <AddFeedback feedbackval={feedbackval} ratings={ratings} handleChangeName={handleChangeName} handleChangeDesc={handleChangeDesc} handleChangeRate={handleChangeRate} addfeedback={addfeedback} />
-        
+
+
       </div>
     );
   }

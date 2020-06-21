@@ -7,7 +7,7 @@ const styles = theme => ({
         padding: theme.spacing(2),
         textAlign: 'left',
         direction: 'column',
-        boxShadow:3,
+        boxShadow: 3,
 
     },
     box: {
@@ -21,25 +21,26 @@ const styles = theme => ({
 class FeedBackValSet extends React.Component {
 
     render() {
-        const { feedbackvalues = [], classes } = this.props;if (feedbackvalues.length > 0) {
-        return <div>
-            <Paper className={classes.root} elevation={3} >
+        const { feedbackvalues = [], classes } = this.props; if (feedbackvalues.length > 0) {
+            return <div>
+                <Paper className={classes.root} elevation={3} >
 
-                <h3>Feedback</h3>{
-            feedbackvalues.map((key, index) => {
-             return (   
-        <div key={index}>
-        <List>
-            Name:{key.name}<br/>
-            Description:{key.description}<br/>
-            Rating:{key.rating}<br/>
-        </List>
-    </div>
-             )     
-            })
-            }</Paper>
-        </div>}return <div></div>
-     }
+                    <h3>Feedback</h3>{
+                        feedbackvalues.map((key, index) => {
+                            return (
+                                <div key={index} >
+                                    <List>
+                                        Name:{key.name}<br />
+                                        Description:{key.description}<br />
+                                        Rating:{key.rating}<br />
+                                    </List>
+                                </div>
+                            )
+                        })
+                    }</Paper>
+            </div>
+        } return <div></div>
+    }
 }
 
-export default withStyles (styles) (FeedBackValSet); 
+export default withStyles(styles)(FeedBackValSet); 
